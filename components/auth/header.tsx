@@ -25,7 +25,8 @@ export default function Header() {
           className="mx-auto h-10 w-auto"
           src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
           alt="Leegro POS"
-          fill
+          width={500}
+          height={500}
         />
       </Link>
       <h2 className="mt-5 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
