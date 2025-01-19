@@ -10,7 +10,7 @@ export default function LoginPage() {
     <>
       <form className="space-y-6" action="#" method="POST">
         <div>
-          <InputGroup htmlFor="email" label="E-mail address">
+          <InputGroup htmlFor="email" label="E-mail">
             <Input type="email" name="email" id="email" autoComplete="email" />
           </InputGroup>
         </div>
@@ -20,7 +20,7 @@ export default function LoginPage() {
             <InputLabel htmlFor="password">Password</InputLabel>
             <div className="text-sm">
               <DefaultLink href="/auth/forgot-password">
-                Forgot password?
+                Lupa password?
               </DefaultLink>
             </div>
           </div>
@@ -36,14 +36,14 @@ export default function LoginPage() {
 
         <div>
           <Button type="submit" buttonType="primary" block>
-            Sign in
+            Login
           </Button>
         </div>
       </form>
 
       <Paragraph>
-        Don't have an account? &nbsp;
-        <DefaultLink href="/auth/signup">Sign up</DefaultLink>
+        Belum punya akun? &nbsp;
+        <DefaultLink href="/auth/signup">Daftar</DefaultLink>
       </Paragraph>
     </>
   );

@@ -7,13 +7,13 @@ export default function Header() {
   let headerText = "";
 
   if (path.startsWith("/auth/login")) {
-    headerText = "Sign in to your account";
+    headerText = "Login ke akun Anda";
   } else if (path.startsWith("/auth/signup")) {
-    headerText = "Create a new account";
+    headerText = "Buat akun baru";
   } else if (path.startsWith("/auth/forgot-password")) {
-    headerText = "Forgot your password?";
+    headerText = "Lupa password Anda?";
   } else if (path.startsWith("/auth/reset-password")) {
-    headerText = "Reset your password";
+    headerText = "Atur ulang password Anda";
   }
 
   return (
