@@ -1,5 +1,6 @@
 import Input from "@/components/form/input";
 import InputGroup from "@/components/form/input-group";
+import InputPassword from "@/components/form/input-password";
 import Button from "@/components/general/button";
 import DefaultLink from "@/components/general/default-link";
 import Paragraph from "@/components/general/paragraph";
@@ -27,12 +28,19 @@ export default function SignupPage() {
           />
         </InputGroup>
         <InputGroup htmlFor="password" label="Password">
-          <Input
-            type="password"
+          <InputPassword
             name="password"
             id="password"
             autoComplete="current-password"
             placeholder="Password Anda"
+          />
+        </InputGroup>
+        <InputGroup htmlFor="password_confirmation" label="Konfirmasi Password">
+          <InputPassword
+            name="password_confirmation"
+            id="password_confirmation"
+            autoComplete="current-password-confirmation"
+            placeholder="Konfirmasi Password"
           />
         </InputGroup>
         <InputGroup htmlFor="phone" label="Nomer HP">

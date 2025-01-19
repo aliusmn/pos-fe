@@ -1,6 +1,7 @@
 import Input from "@/components/form/input";
 import InputGroup from "@/components/form/input-group";
 import InputLabel from "@/components/form/input-label";
+import InputPassword from "@/components/form/input-password";
 import Button from "@/components/general/button";
 import DefaultLink from "@/components/general/default-link";
 import Paragraph from "@/components/general/paragraph";
@@ -8,7 +9,7 @@ import Paragraph from "@/components/general/paragraph";
 export default function LoginPage() {
   return (
     <>
-      <form className="space-y-6" action="#" method="POST">
+      <form className="space-y-4" action="#" method="POST">
         <InputGroup htmlFor="email" label="E-mail">
           <Input
             type="email"
@@ -29,8 +30,7 @@ export default function LoginPage() {
             </div>
           </div>
           <div className="mt-1">
-            <Input
-              type="password"
+            <InputPassword
               name="password"
               id="password"
               autoComplete="current-password"

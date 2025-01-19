@@ -19,7 +19,7 @@ export default function Button({
   block?: boolean;
   bordered?: boolean;
   className?: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement> & { [key: string]: any }) {
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const sizeClasses = {
     small: "px-2 py-1 text-xs/6",
     default: "px-3 py-1.5 text-sm/6",
