@@ -21,7 +21,7 @@ export default function Button({
   className?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement> & { [key: string]: any }) {
   const sizeClasses = {
-    small: "px-2 py-1 text-sm",
+    small: "px-2 py-1 text-xs/6",
     default: "px-3 py-1.5 text-sm/6",
     big: "px-4 py-2 text-base",
   };
@@ -51,6 +51,8 @@ export default function Button({
     info: "bg-blue-600 text-white hover:bg-blue-500",
   };
 
+  const disabledClasses = props.disabled ? "opacity-50 cursor-not-allowed" : "";
+
   // Determine type classes based on `bordered`
   const typeClasses = bordered
     ? borderedTypeClasses[buttonType]
@@ -61,7 +63,7 @@ export default function Button({
 
   return (
     <button
-      className={`flex justify-center rounded-md font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${sizeClasses[size]} ${typeClasses} ${blockClass} ${className}`}
+      className={`flex justify-center rounded-md font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${sizeClasses[size]} ${typeClasses} ${blockClass} ${disabledClasses} ${className}`}
       {...props}
     >
       {children}

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Leegro POS",
-  description: "Point of Sale system for small businesses",
+  description: "Aplikasi POS atau Point of Sale untuk usaha kecil menengah.",
 };
 
 export default function RootLayout({

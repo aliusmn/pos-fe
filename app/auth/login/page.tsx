@@ -9,11 +9,15 @@ export default function LoginPage() {
   return (
     <>
       <form className="space-y-6" action="#" method="POST">
-        <div>
-          <InputGroup htmlFor="email" label="E-mail">
-            <Input type="email" name="email" id="email" autoComplete="email" />
-          </InputGroup>
-        </div>
+        <InputGroup htmlFor="email" label="E-mail">
+          <Input
+            type="email"
+            name="email"
+            id="email"
+            autoComplete="email"
+            placeholder="contoh: leegro@gmail.com"
+          />
+        </InputGroup>
 
         <div>
           <div className="flex items-center justify-between">
@@ -24,12 +28,13 @@ export default function LoginPage() {
               </DefaultLink>
             </div>
           </div>
-          <div className="mt-2">
+          <div className="mt-1">
             <Input
               type="password"
               name="password"
               id="password"
               autoComplete="current-password"
+              placeholder="Password Anda"
             />
           </div>
         </div>

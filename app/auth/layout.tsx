@@ -1,8 +1,7 @@
 import Header from "@/components/auth/header";
 
 export const metadata = {
-  title: "Leegro POS - Login",
-  description: "Point of Sale system for small businesses",
+  title: "Leegro POS - Auth",
 };
 
 export default function AuthLayout({

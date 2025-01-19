@@ -16,9 +16,7 @@ export default function InputGroup({
   return (
     <div>
       <InputLabel {...labelProps}>{label}</InputLabel>
-      <div className="mt-2">
-        <div className="mt-2">{children}</div>
-      </div>
+      <div className="mt-1">{children}</div>
     </div>
   );
 }
