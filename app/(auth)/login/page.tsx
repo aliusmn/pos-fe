@@ -24,9 +24,7 @@ export default function LoginPage() {
           <div className="flex items-center justify-between">
             <InputLabel htmlFor="password">Password</InputLabel>
             <div className="text-sm">
-              <DefaultLink href="/auth/forgot-password">
-                Lupa password?
-              </DefaultLink>
+              <DefaultLink href="/forgot-password">Lupa password?</DefaultLink>
             </div>
           </div>
           <div className="mt-1">
@@ -48,7 +46,7 @@ export default function LoginPage() {
 
       <Paragraph>
         Belum punya akun? &nbsp;
-        <DefaultLink href="/auth/signup">Daftar</DefaultLink>
+        <DefaultLink href="/signup">Daftar</DefaultLink>
       </Paragraph>
     </>
   );

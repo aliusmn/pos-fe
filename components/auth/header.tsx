@@ -3,18 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "@/public/logo_text.png";
 
 export default function Header() {
   const path = usePathname();
   let headerText = "";
 
-  if (path.startsWith("/auth/login")) {
+  if (path.startsWith("/login")) {
     headerText = "Login ke akun Anda";
-  } else if (path.startsWith("/auth/signup")) {
+  } else if (path.startsWith("/signup")) {
     headerText = "Buat akun baru";
-  } else if (path.startsWith("/auth/forgot-password")) {
+  } else if (path.startsWith("/forgot-password")) {
     headerText = "Lupa password Anda?";
-  } else if (path.startsWith("/auth/reset-password")) {
+  } else if (path.startsWith("/reset-password")) {
     headerText = "Atur ulang password Anda";
   }
 
@@ -22,11 +23,11 @@ export default function Header() {
     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <Link href="/">
         <Image
-          className="mx-auto h-10 w-auto"
-          src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+          className="mx-auto h-20 w-auto"
+          src={Logo}
           alt="Leegro POS"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
         />
       </Link>
       <h2 className="mt-5 text-center text-2xl/9 font-bold tracking-tight text-gray-900">

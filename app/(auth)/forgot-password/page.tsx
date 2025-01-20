@@ -27,7 +27,7 @@ export default function ForgotPasswordPage() {
 
       <Paragraph>
         Kembali ke halaman &nbsp;
-        <DefaultLink href="/auth/login">Login</DefaultLink>
+        <DefaultLink href="/login">Login</DefaultLink>
       </Paragraph>
     </>
   );

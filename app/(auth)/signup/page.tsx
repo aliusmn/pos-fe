@@ -81,7 +81,7 @@ export default function SignupPage() {
 
       <Paragraph>
         Sudah punya akun? &nbsp;
-        <DefaultLink href="/auth/login">Login</DefaultLink>
+        <DefaultLink href="/login">Login</DefaultLink>
       </Paragraph>
     </>
   );
