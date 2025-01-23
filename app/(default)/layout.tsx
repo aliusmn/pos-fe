@@ -2,6 +2,7 @@ import Dashboard from "@/components/dashboard/dashboard";
 import { HeaderMenu } from "@/components/dashboard/header-profile-menu";
 import { MenuSection } from "@/components/dashboard/sidebar-menu";
 import {
+  BuildingStorefrontIcon,
   CogIcon,
   HomeIcon,
   PhoneIcon,
@@ -45,6 +46,11 @@ export default function DashboardLayout({
           title: "Dashboard",
           icon: <HomeIcon className="size-6" />,
           href: "/",
+        },
+        {
+          title: "Cabang",
+          icon: <BuildingStorefrontIcon className="size-6" />,
+          href: "/branches",
         },
         {
           title: "Orders",

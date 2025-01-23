@@ -39,7 +39,7 @@ export default function Dashboard({
   }, []);
 
   return (
-    <div className="flex w-full justify-end">
+    <div className="flex w-full justify-end bg-gray-100">
       <Transition show={openSidebar}>
         <aside
           className={`${
@@ -78,7 +78,11 @@ export default function Dashboard({
           </div>
           <HeaderProfileMenu headerMenu={headerMenu} />
         </header>
-        <main className="p-4">{children}</main>
+        <main className="p-4">
+          <div className="p-4 bg-white shadow-inner shadow-md rounded-lg">
+            {children}
+          </div>
+        </main>
       </div>
     </div>
   );

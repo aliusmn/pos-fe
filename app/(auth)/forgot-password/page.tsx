@@ -25,7 +25,7 @@ export default function ForgotPasswordPage() {
         </div>
       </form>
 
-      <Paragraph>
+      <Paragraph className="text-center mt-5">
         Kembali ke halaman &nbsp;
         <DefaultLink href="/login">Login</DefaultLink>
       </Paragraph>

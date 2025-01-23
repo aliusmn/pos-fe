@@ -44,7 +44,7 @@ export default function LoginPage() {
         </div>
       </form>
 
-      <Paragraph>
+      <Paragraph className="text-center mt-5">
         Belum punya akun? &nbsp;
         <DefaultLink href="/signup">Daftar</DefaultLink>
       </Paragraph>

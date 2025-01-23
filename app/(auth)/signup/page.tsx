@@ -79,7 +79,7 @@ export default function SignupPage() {
         </div>
       </form>
 
-      <Paragraph>
+      <Paragraph className="text-center mt-5">
         Sudah punya akun? &nbsp;
         <DefaultLink href="/login">Login</DefaultLink>
       </Paragraph>
