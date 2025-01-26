@@ -55,7 +55,7 @@ export default function SignupPage() {
               />
             </div>
             <div className="basis-1/4 flex items-center justify-center">
-              <Button type="button" buttonType="primary" size="small" block>
+              <Button type="button" variant="primary" size="small" block>
                 Kirim OTP
               </Button>
             </div>
@@ -73,7 +73,7 @@ export default function SignupPage() {
         </InputGroup>
 
         <div>
-          <Button type="submit" buttonType="primary" block disabled>
+          <Button type="submit" variant="primary" block disabled>
             Daftar
           </Button>
         </div>

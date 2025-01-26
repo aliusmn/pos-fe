@@ -33,7 +33,7 @@ export default function ResetPasswordPage() {
       </InputGroup>
 
       <div>
-        <Button type="submit" buttonType="primary" block>
+        <Button type="submit" variant="primary" block>
           Reset Password
         </Button>
       </div>

@@ -19,7 +19,7 @@ export default function ForgotPasswordPage() {
         </InputGroup>
 
         <div>
-          <Button type="submit" buttonType="primary" block>
+          <Button type="submit" variant="primary" block>
             Kirim Link
           </Button>
         </div>

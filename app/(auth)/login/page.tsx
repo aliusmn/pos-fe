@@ -38,7 +38,7 @@ export default function LoginPage() {
         </div>
 
         <div>
-          <Button type="submit" buttonType="primary" block>
+          <Button type="submit" variant="primary" block>
             Login
           </Button>
         </div>

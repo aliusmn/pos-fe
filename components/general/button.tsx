@@ -1,7 +1,7 @@
 export default function Button({
   children,
   size = "default",
-  buttonType = "default",
+  variant = "default",
   block = false,
   bordered = false,
   className = "",
@@ -9,13 +9,7 @@ export default function Button({
 }: {
   children: React.ReactNode;
   size?: "small" | "default" | "big";
-  buttonType?:
-    | "primary"
-    | "secondary"
-    | "default"
-    | "danger"
-    | "success"
-    | "info";
+  variant?: "primary" | "secondary" | "default" | "danger" | "success" | "info";
   block?: boolean;
   bordered?: boolean;
   className?: string;
@@ -45,7 +39,7 @@ export default function Button({
   const filledTypeClasses = {
     primary: "bg-indigo-600 text-white hover:bg-indigo-500",
     secondary: "bg-gray-600 text-white hover:bg-gray-500",
-    default: "bg-gray-300 text-gray-900 hover:bg-gray-200",
+    default: "bg-gray-300 text-gray-500 hover:bg-gray-200",
     danger: "bg-red-600 text-white hover:bg-red-500",
     success: "bg-green-600 text-white hover:bg-green-500",
     info: "bg-blue-600 text-white hover:bg-blue-500",
@@ -55,15 +49,15 @@ export default function Button({
 
   // Determine type classes based on `bordered`
   const typeClasses = bordered
-    ? borderedTypeClasses[buttonType]
-    : filledTypeClasses[buttonType];
+    ? borderedTypeClasses[variant]
+    : filledTypeClasses[variant];
 
   // Additional classes
   const blockClass = block ? "w-full" : "inline-flex";
 
   return (
     <button
-      className={`flex justify-center rounded-md font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${sizeClasses[size]} ${typeClasses} ${blockClass} ${disabledClasses} ${className}`}
+      className={`flex justify-center items-center rounded-md font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${sizeClasses[size]} ${typeClasses} ${blockClass} ${disabledClasses} ${className}`}
       {...props}
     >
       {children}
