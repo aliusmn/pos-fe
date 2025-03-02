@@ -23,7 +23,7 @@ export default function ResetPasswordPage() {
           placeholder="Password Anda"
         />
       </InputGroup>
-      <InputGroup htmlFor="password_confirmation" label="Konfirmasi Password">
+      <InputGroup htmlFor="password_confirmation" label="Konfirmasi Password haha">
         <InputPassword
           name="password_confirmation"
           id="password_confirmation"
