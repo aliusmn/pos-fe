@@ -5,7 +5,7 @@ import Button from "@/components/general/button";
 
 export default function ResetPasswordPage() {
   return (
-    <form className="space-y-4" action="#" method="POST">
+    <form className="space-y-4" action="#" method="PUT">
       <InputGroup htmlFor="email" label="E-mail">
         <Input
           type="email"
