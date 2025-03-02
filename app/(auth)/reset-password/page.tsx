@@ -20,7 +20,7 @@ export default function ResetPasswordPage() {
           name="password"
           id="password"
           autoComplete="current-password"
-          placeholder="Password Anda Haha"
+          placeholder="Password Anda"
         />
       </InputGroup>
       <InputGroup htmlFor="password_confirmation" label="Konfirmasi Password">
